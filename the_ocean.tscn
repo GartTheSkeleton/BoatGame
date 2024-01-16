@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://q686i37lsxdu"]
+
+[ext_resource type="Script" path="res://the_ocean.gd" id="1_qmt10"]
+[ext_resource type="PackedScene" uid="uid://cl3hvxjfs3y13" path="res://wave.tscn" id="2_wwxhr"]
+
+[node name="The Ocean" type="Node2D"]
+script = ExtResource("1_qmt10")
+
+[node name="Wave" parent="." instance=ExtResource("2_wwxhr")]

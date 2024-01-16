@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtseam1vjvfuq"]
+
+[ext_resource type="Texture2D" uid="uid://cc0xugjc7tjrh" path="res://icon.svg" id="1_20dtd"]
+[ext_resource type="Script" path="res://cloud.gd" id="2_07vmt"]
+
+[node name="The Sky" type="Node2D"]
+
+[node name="Cloud" type="Sprite2D" parent="."]
+texture = ExtResource("1_20dtd")
+script = ExtResource("2_07vmt")
+
+[node name="Cloud2" type="Sprite2D" parent="."]
+position = Vector2(390, 189)
+texture = ExtResource("1_20dtd")
+script = ExtResource("2_07vmt")
+
+[node name="Cloud3" type="Sprite2D" parent="."]
+position = Vector2(879, 18)
+texture = ExtResource("1_20dtd")
+script = ExtResource("2_07vmt")
+
+[node name="Cloud4" type="Sprite2D" parent="."]
+position = Vector2(1546, 96)
+texture = ExtResource("1_20dtd")
+script = ExtResource("2_07vmt")

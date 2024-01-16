@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn8ptk4ls1g1i"]
+
+[ext_resource type="Script" path="res://encounter.gd" id="1_cagg7"]
+[ext_resource type="Texture2D" uid="uid://cc0xugjc7tjrh" path="res://icon.svg" id="2_4l2vb"]
+
+[node name="Encounter" type="Node2D"]
+script = ExtResource("1_cagg7")
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("2_4l2vb")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -128.0
+offset_top = -208.0
+offset_right = 128.0
+offset_bottom = -80.0
+
+[node name="Label" type="Label" parent="Panel"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 60.0
+text = "Hello! I am something you encountered on the high seas!"
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 80.0
+offset_right = 96.0
+offset_bottom = 112.0
+text = "Sick"
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 80.0
+offset_right = 232.0
+offset_bottom = 112.0
+text = "Cool"
