@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://o75i768e6lwa"]
+
+[ext_resource type="Script" path="res://cannonball.gd" id="1_8krru"]
+[ext_resource type="Texture2D" uid="uid://cc0xugjc7tjrh" path="res://icon.svg" id="1_388pd"]
+
+[node name="cannonball" type="RigidBody2D"]
+mass = 0.95
+inertia = 0.36
+script = ExtResource("1_8krru")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-1, 16, -11, 14, -16, 7, -16, -7, -7, -16, 10, -16, 17, -7, 16, 11, 0, 16)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_388pd")
